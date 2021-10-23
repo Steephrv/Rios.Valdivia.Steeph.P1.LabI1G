@@ -1,0 +1,82 @@
+# depslib dependency file v1.0
+1634940504 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\color.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"color.h"
+
+1634950324 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\mascota.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"mascota.h"
+	"tipo.h"
+	"color.h"
+
+1634950324 c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\mascota.h
+	"tipo.h"
+	"color.h"
+
+1634940570 c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\tipo.h
+
+1634942949 c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\color.h
+
+1634940547 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\tipo.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"tipo.h"
+
+1634947768 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"dataWarehouse.h"
+	"mascota.h"
+	"tipo.h"
+	"color.h"
+	"servicio.h"
+	"trabajo.h"
+
+1634944734 c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\datawarehouse.h
+	"mascota.h"
+
+1634944786 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\datawarehouse.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"dataWarehouse.h"
+	"mascota.h"
+
+1634945149 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\fecha.c
+	"fecha.h"
+
+1634945139 c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\fecha.h
+
+1634945393 c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\servicio.h
+
+1634945393 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\servicio.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"servicio.h"
+
+1634946119 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\inputs.c
+	"inputs.h"
+
+1634948469 c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\inputs.h
+
+1634950597 c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\trabajo.h
+	"mascota.h"
+	"fecha.h"
+	"servicio.h"
+
+1634948373 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\trabajo.c
+	<stdio.h>
+	<stdlib.h>
+	"trabajo.h"
+	"mascota.h"
+	"servicio.h"
+	"inputs.h"
+

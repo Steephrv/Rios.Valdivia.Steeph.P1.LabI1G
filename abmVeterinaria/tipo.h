@@ -1,0 +1,16 @@
+#ifndef TIPO_H_INCLUDED
+#define TIPO_H_INCLUDED
+
+typedef struct
+{
+    int id;
+    char descripcion[21];
+}eTipo;
+
+
+#endif // TIPO_H_INCLUDED
+
+int cargarDescripcionTipo(eTipo tipos[], int tamTip,int idTipo , char descripcion[]);
+int mostrarTipos(eTipo tipos[], int tamTip);
+int validarIdTipo(int id ,eTipo tipos[], int tamTip);
+
