@@ -97,15 +97,17 @@ int altaTrabajos(eTrabajo trabajos[], int tamTrab, eMascota lista[], int tam, eT
 void mostrarTrabajo(eTrabajo unTrabajo, eMascota lista[], int tam, eServicio servicios[], int tamServ , eTipo tipos[], int tamTip, eColor colores[], int tamCol)
 {
     char descripServ[25];
-    char descripMarca[20];
+    char descripTipo[20];
     char descripColor[20];
+    char nombreMascota[20];
 
     if(cargarDescripcionServicio(servicios, tamServ , unTrabajo.idServicio, descripServ) ==1 &&
-       cargarTipoMascota(lista, tam, tipos, tamTip, unTrabajo.idMascota, descripMarca) ==1  &&
-       cargarColorMascota(lista, tam, colores, tamCol, unTrabajo.idMascota,descripColor)==1 )
+       cargarTipoMascota(lista, tam, tipos, tamTip, unTrabajo.idMascota, descripTipo) ==1  &&
+       cargarColorMascota(lista, tam, colores, tamCol, unTrabajo.idMascota,descripColor)==1 &&
+       cargarNombreMascota(lista, tam, unTrabajo.idMascota, nombreMascota)==1)
        {
-           printf(" %d       %-15s  %-15s   %-15s   %2d/%2d/%d \n",
-           unTrabajo.id, descripServ , descripMarca,descripColor, unTrabajo.fecha.dia , unTrabajo.fecha.mes, unTrabajo.fecha.anio);
+           printf(" %d         %-15s    %-15s   %-15s   %-15s  %02d/%02d/%d \n",
+           unTrabajo.id, descripServ , descripTipo,descripColor, nombreMascota, unTrabajo.fecha.dia , unTrabajo.fecha.mes, unTrabajo.fecha.anio);
        }
 }
 
@@ -116,10 +118,10 @@ int mostrarTrabajos(eTrabajo trabajos[], int tamTrab,eMascota lista[], int tam, 
     if(trabajos != NULL && tamTrab > 0 && lista != NULL && tam > 0 && colores != NULL && tamCol > 0 && tipos != NULL && tamTip > 0 && servicios != NULL && tamServ > 0)
     {
         system("cls");
-        printf("                    **** Lista de Trabajos **** \n");
-        printf("---------------------------------------------------------------------------\n");
-        printf(" ID       SERVICIO         TIPO              COLOR                Fecha \n");
-        printf("---------------------------------------------------------------------------\n");
+        printf("                               **** Lista de Trabajos **** \n");
+        printf("------------------------------------------------------------------------------------------------\n");
+        printf(" ID          SERVICIO           TIPO               COLOR          NOMBRE MASCOTA        Fecha \n");
+        printf("------------------------------------------------------------------------------------------------\n");
 
         for(int i=0; i< tam ; i++)
         {

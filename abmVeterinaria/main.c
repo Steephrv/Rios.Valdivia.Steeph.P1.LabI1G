@@ -30,6 +30,7 @@ int main()
 
 {
     char seguir = 's';
+    char continuar = 's';
     int nextIdMascota = 50000;
     int nextIdTrabajo = 7000;
     int queHizo =0;
@@ -72,10 +73,12 @@ int main()
 
     if(!inicializarTrabajos(trabajos, TAM_TRAB))
        {
-           printf("Problema al inicializar almuerzos");
+           printf("Problema al inicializar trabajos");
        }
 
+
        hardcodearMascotas(lista,TAM,10,&nextIdMascota);
+       hardcodearTrabajos(trabajos,TAM_TRAB,10,&nextIdTrabajo);
 
        do
         {
@@ -127,8 +130,6 @@ int main()
                         printf("Baja exitosa!!\n");
                     }
                 }
-
-
                 break;
 
             case 'D':
@@ -199,8 +200,130 @@ int main()
                     }
                 }
                 break;
-
             case 'J':
+                do
+                {
+                    system("cls");
+                    switch(subMenuInformes())
+                    {
+                        case 1:
+                            if(queHizo == 0)
+                            {
+                                printf("\nNo se puede mostrar  el la lista, sin antes haber dado de alta alguna mascota!!\n");
+                            }
+                            else
+                            {
+                               if(!informarMascotasColor(lista, TAM, tipos, TAM_TIP, colores, TAM_COL))
+                                {
+                                    printf("\nNo se pudo mostrar las mascotas por color elegido!!\n");
+                                }
+                            }
+
+                            break;
+
+                        case 2:
+
+                            if(queHizo == 0)
+                            {
+                                printf("\nNo se puede mostrar  el promedio, sin antes haber dado de alta alguna mascota!!\n");
+                            }
+                            else
+                            {
+                               if(!informarPromedioMascVacunadas(lista, TAM,tipos, TAM_TIP, colores, TAM_COL))
+                                {
+                                    printf("\nNo se pudo mostrar el promedio!!\n");
+                                }
+                            }
+
+                            break;
+
+                        case 3:
+                            if(queHizo == 0)
+                            {
+                                printf("\nNo se puede mostrar  la menor mascota, sin antes haber dado de alta alguna mascota!!\n");
+                            }
+                            else
+                            {
+                               if(!informarMascMenorEdad(lista, TAM))
+                                {
+                                    printf("\nNo se pudo mostrar la/s mascota/s con menor edad!!\n");
+                                }
+                            }
+                            break;
+
+                        case 4:
+                              if(queHizo == 0)
+                            {
+                                printf("\nNo se puede mostrar todos las mascotas por tipo, sin antes haber dado de alta alguna mascota!!\n");
+                            }
+                            else
+                            {
+                               if(!informarTodasMascTipos(lista,TAM,tipos,TAM_TIP,colores, TAM_COL))
+                                {
+                                    printf("\nNo se pudo mostrar todas las mascotas por tipo!!\n");
+                                }
+                            }
+                            break;
+
+                        case 5:
+                            if(queHizo == 0)
+                            {
+                                printf("\nNo se puede mostrar todos las cantidades por tipo y color, sin antes haber dado de alta alguna mascota!!\n");
+                            }
+                            else
+                            {
+                               if(!informarCantidadMascTipoColor(lista,TAM, tipos, TAM_TIP, colores, TAM_COL))
+                                {
+                                    printf("\nNo se pudo mostrar todas las cantidas por tipo y color!!\n");
+                                }
+                            }
+                            break;
+
+                        case 6:
+                                  if(queHizo == 0)
+                            {
+                                printf("\nNo se puede mostrar el color o colores mas ingresado, sin antes haber dado de alta alguna mascota!!\n");
+                            }
+                            else
+                            {
+                               if(!informarColorMascMasIngresada(lista,TAM,colores,TAM_COL))
+                                {
+                                    printf("\nNo se pudo mostrar el color o colores mas ingresado!!\n");
+                                }
+                            }
+
+                            break;
+
+               /*         case 7:
+
+                            break;
+
+                          case 8:
+
+                            break;
+
+                        case 9:
+
+                            break;
+
+                        case 10:
+
+                            break; */
+
+                            case 11:
+                                 printf("Ha seleccionado salir\n");
+                                 continuar='n';
+                                 break;
+
+                            default:
+                            printf("Opcion invalida!!!\n");
+                    }
+                    system("pause");
+
+                }while (continuar == 's');
+                break;
+
+            case 'K':
                 printf("Ha seleccionado salir\n");
                 seguir='n';
                 break;

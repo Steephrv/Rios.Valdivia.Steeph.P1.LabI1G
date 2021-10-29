@@ -5,7 +5,7 @@
 	<string.h>
 	"color.h"
 
-1634950324 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\mascota.c
+1635549886 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\mascota.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -13,8 +13,9 @@
 	"mascota.h"
 	"tipo.h"
 	"color.h"
+	"inputs.h"
 
-1634950324 c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\mascota.h
+1635548968 c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\mascota.h
 	"tipo.h"
 	"color.h"
 
@@ -28,7 +29,7 @@
 	<string.h>
 	"tipo.h"
 
-1634947768 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\main.c
+1635549712 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -39,15 +40,18 @@
 	"servicio.h"
 	"trabajo.h"
 
-1634944734 c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\datawarehouse.h
+1635528272 c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\datawarehouse.h
 	"mascota.h"
+	"trabajo.h"
 
-1634944786 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\datawarehouse.c
+1635547999 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\datawarehouse.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"dataWarehouse.h"
 	"mascota.h"
+	"trabajo.h"
+	"fecha.h"
 
 1634945149 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\fecha.c
 	"fecha.h"
@@ -62,17 +66,22 @@
 	<string.h>
 	"servicio.h"
 
-1634946119 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\inputs.c
+1635465004 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\inputs.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"inputs.h"
 	"inputs.h"
 
-1634948469 c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\inputs.h
+1635465003 c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\inputs.h
 
 1634950597 c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\trabajo.h
 	"mascota.h"
 	"fecha.h"
 	"servicio.h"
 
-1634948373 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\trabajo.c
+1635529531 source:c:\users\lenovo\onedrive\escritorio\parciallab1\abmveterinaria\trabajo.c
 	<stdio.h>
 	<stdlib.h>
 	"trabajo.h"

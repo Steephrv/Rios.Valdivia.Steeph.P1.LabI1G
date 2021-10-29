@@ -139,7 +139,7 @@ int bajaMascota(eMascota lista[], int tam, eTipo tipos[],int tamTip, eColor colo
  * \return int  Retorna 1 si esta todoOK o 0 si hubo algun error.
  *
  */
-int ordenarMascotasTipoNombre(eMascota lista[], int tam , int orden);
+int ordenarMascotasTipoNombre(eMascota lista[], int tam , eTipo tipos[], int tamTip, int orden);
 
 
 /** \brief Imprime un menu de opciones para el usuario
@@ -188,3 +188,27 @@ int cargarTipoMascota( eMascota lista[], int tam, eTipo tipos[], int tamTip, int
  *
  */
 int cargarColorMascota( eMascota lista[], int tam, eColor colores[], int tamCol, int idMascota, char color[] );
+
+int cargarNombreMascota(eMascota lista[], int tam,int id , char nombre[]);
+
+// INFORMES
+int subMenuInformes();
+
+
+int mostraMascotasIdColor(int idColor,eMascota lista[], int tam,eTipo tipos[], int tamTip, eColor colores[],int tamCol);
+int informarMascotasColor(eMascota lista[], int tam,eTipo tipos[], int tamTip, eColor colores[],int tamCol);
+
+int informarPromedioMascVacunadas(eMascota lista[], int tam , eTipo tipos[], int tamTip, eColor colores[], int tamCol);
+
+int informarMascMenorEdad(eMascota lista[], int tam);
+
+int mostrarMascotasIdTipo(int idTipo,eMascota lista[], int tam,eTipo tipos[], int tamTip, eColor colores[],int tamCol);
+int informarTodasMascTipos(eMascota lista[], int tam, eTipo tipos[],int tamTip , eColor colores[], int tamCol);
+
+int informarCantidadMascTipoColor(eMascota lista[], int tam, eTipo tipos[], int tamTip, eColor colores[],int tamCol);
+
+int informarColorMascMasIngresada(eMascota lista[], int tam, eColor colores[],int tamCol);
+
+//BONUS TRACK
+int mostraMascotasId(int id,eMascota lista[], int tam,eTipo tipos[], int tamTip, eColor colores[],int tamCol);
+
